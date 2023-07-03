@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinil Store</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container-botao">
+            <label for="menu" class="container-rotulo">
+                <span class="cabecalho-menu container-image"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu-titulo">Categorias</li>
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">TrapHits</a>
+                </li>
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Drill</a>
+                </li>
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Plug</a>
+                </li>
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Detroit</a>
+                </li>
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">90's & 20's</a>
+                </li>
+            </ul>
+            <img src="./img/logo.png" alt="logo vinil store" class="container-image" style="width:52px">
+
+            <h1 class="container-titulo"><b class="container-titulo--negrito">Vinil</b>Store</h1>
+        </div>
+        
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes-botao">
+            <label for="opcoes-menu" class="opcoes-rotulo">
+                <li class="opcoes-item">Categorias</li>
+            </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu-item">
+                        <a href="#" class="lista-menu-link">TrapHits</a>
+                    </li>
+                    <li class="lista-menu-item">
+                        <a href="#" class="lista-menu-link">Drill</a>
+                    </li>
+                    <li class="lista-menu-item">
+                        <a href="#" class="lista-menu-link">Plug</a>
+                    </li>
+                    <li class="lista-menu-item">
+                        <a href="#" class="lista-menu-link">Detroit</a>
+                    </li>
+                    <li class="lista-menu-item">
+                        <a href="#" class="lista-menu-link">90's & 20's</a>
+                    </li>
+                </ul>
+            <li class="opcoes-item"><a href="#" class="opcoes-link">Favoritos</a></li>
+            <li class="opcoes-item"><a href="#" class="opcoes-link">Minha estante</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#" class="container-link">
+                <img src="./img/favorite.svg" alt="meus favoritos" class="container-image container-img-transp">
+            </a>
+
+            <a href="#" class="container-link">
+                <img src="./img/sacola.svg"alt="sacola de compras" class="container-image">
+                <p class="container-texto">Minha sacola</p>
+            </a>
+
+            <a href="#" class="container-link">
+                <img src="./img/usuario.svg" alt="meu perfil" class="container-image">
+                <p class="container-texto">Meu perfil</p>
+            </a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner-titulo">Já sabe por onde começar?</h2>
+        <p class="banner-texto">Descubra os Tesouros Musicais na Nossa Estante!</p>
+        <input type="search" placeholder="Qual será sua próxima reprodução?" class="banner-pesquisa">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel-titulo">Novos lançamentos</h2>
+                <!-- Slider main container -->
+        <div class="carrossel-container">
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                    <div class="swiper-slide"><img src="./img/apolonasty.jpg" alt="apolonasty"></div>
+                    <div class="swiper-slide"><img src="./img/astroword.jpg" alt="astroword"></div>
+                    <div class="swiper-slide"><img src="./img/esculpidoamachado.jpg" alt="esculpidoamachado"></div>
+                    <div class="swiper-slide"><img src="./img/tdb.jpg" alt="tdb"></div>
+                    <div class="swiper-slide"><img src="./img/SobrevivendonoInferno.jpg" alt="SobrevivendonoInferno"></div>
+                    <div class="swiper-slide"><img src="./img/bgletrap.jpg" alt="bgletrap"></div>
+                    <div class="swiper-slide"><img src="./img/diasantesdemandrake.jpg" alt="diasantesdemandrake"></div>
+                    <div class="swiper-slide"><img src="./img/fiquericooumorratentando.jpg" alt="fiquericooumorratentando"></div>
+                    <div class="swiper-slide"><img src="./img/putodiparis.png" alt="putodiparis"></div>
+                    ...
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <div class="card-descricao">
+
+                    <div class="descricao">
+                        <h3 class="descricao-titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descricao-titulo-disco">Máquina do Tempo</h2>
+                        <p class="descricao-texto">Máquina do Tempo é o álbum de estreia do rapper Matuê.</p>
+                    </div>
+
+                    <img src="./img/maquinadotempo.webp" alt="maquinadotempo" class="descricao-img">
+                </div>
+                <div class="card-botoes">
+
+                    <ul class="botoes">
+                        <li class="botoes-item"><img src="./img/favorite.svg" alt="adicionar aos favoritos" style="width: 40px;"></li>
+                        <li class="botoes-item"><img src="./img/sacola.svg" alt="adicionar a sacola" style="width: 40px;"></li>
+                    </ul>
+
+                    <a href="#" class="botoes-ancora">Saiba mais</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="carrossel 2">
+        <h2 class="carrossel-titulo">Mais Vendidos</h2>
+              <!-- Slider main container -->
+        <div class="carrossel-container">
+            <div class="swiper">
+                    <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./img/dosprediosdeluxe.jpg" alt="dospredios"></div>
+                    <div class="swiper-slide"><img src="./img/2pac.jpg" alt="2pac"></div>
+                    <div class="swiper-slide"><img src="./img/contradicoes.jpg" alt="contradicoes"></div>
+                    <div class="swiper-slide"><img src="./img/237.jpg" alt="237"></div>
+                    <div class="swiper-slide"><img src="./img/manualdecomoamarerrado.jpg" alt="manualdecomoamarerrado"></div>
+                    <div class="swiper-slide"><img src="./img/ttf.jpg" alt="ttf"></div>
+                    <div class="swiper-slide"><img src="./img/gado.jpg" alt="gado"></div>
+                    <div class="swiper-slide"><img src="./img/rapdosnovosbandidos.jpg" alt="rapdosnovosbandidos"></div>
+                    <div class="swiper-slide"><img src="./img/Nadacomoumdiaapósooutrodia.jpg" alt="Nadacomoumdiaapósooutrodia"></div>
+                    <div class="swiper-slide"><img src="./img/dospredios.jpg" alt="dosprediosdeluxe"></div>
+                            ...
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <div class="card-descricao">
+
+                    <div class="descricao">
+                        <img src="./img/Estrelinhas.svg" alt="estrelinhas"> <br>
+                        <h3 class="descricao-titulo">Histórias Da Minha Área</h3>
+                        <h2 class="descricao-titulo-disco">Todo Errado</h2>
+                        <p class="descricao-texto">O single faz parte do quarto álbum de estúdio do rapper brasileiro Djonga.</p>
+                    </div>
+
+                    <img src="./img/historiasdaminhaarea.jpg" alt="historiasdaminhaarea"class="descricao-img">
+                </div>
+                <div class="card-botoes">
+
+                    <ul class="botoes">
+                        <li class="botoes-item"><img src="./img/favorite.svg" alt="adicionar aos favoritos" style="width: 40px;"></li>
+                        <li class="botoes-item"><img src="./img/sacola.svg" alt="adicionar a sacola" style="width: 40px;"></li>
+                    </ul>
+
+                    <a href="#" class="botoes-ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="topicos">
+        <h2 class="topicos-titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="topicos-lista">
+            <li class="topicos-item">
+                <a href="#" class="topicos-link">Oruam</a>
+            </li>
+            <li class="topicos-item">
+                <a href="#" class="topicos-link">Trap Carioca</a>
+            </li>
+            <li class="topicos-item">
+                <a href="#" class="topicos-link">Did Brock</a>
+            </li>
+            <li class="topicos-item">
+                <a href="#" class="topicos-link">Aka Rasta</a>
+            </li>
+            <li class="topicos-item">
+                <a href="#" class="topicos-link">Hood Mob</a>
+            </li>
+            <li class="topicos-item">
+                <a href="#" class="topicos-link">Banca Pier</a>
+            </li>
+            <li class="topicos-item">
+                <a href="#" class="topicos-link">Recayd Mob</a>
+            </li>
+            <li class="topicos-item">
+                <a href="#" class="topicos-link">Sotam</a>
+            </li>
+        </ul>
+    </section>
+    <section class="contato">
+        <div class="contato-descricao">
+            <h2 class="contato-titulo">Fique por dentro das novidades!</h2>
+            <p class="contato-texto">Atualizações de singles, novos discos, promoções e outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato-email">
+    </section>
+    <hr/>
+    <footer>
+        <h2 class="rodape-titulo"> &copy; felpitos</h2>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+             navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+             },
+            });
+    </script>
+
+</body>
+</html>
